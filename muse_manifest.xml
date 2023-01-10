@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673235860823">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673369776278">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4096592659" ref="index"/>
+    <file name="index.css" crc="4271753388" ref="index"/>
     <file name="visual-identity.css" crc="4092726866" ref="visual-identity"/>
     <file name="you-create.css" crc="443158441" ref="you-create"/>
   </folder>
@@ -34,10 +34,10 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
     </file>
-    <file name="pic-distribution.jpg" crc="448843622" ref="index">
+    <file name="pic-distribution.jpg" crc="448843622" ref="index" seo="true">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="pic-lebals.jpg" crc="3991438548" ref="index">
+    <file name="pic-lebals.jpg" crc="485933075" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="pic-kklive.jpg" crc="86156682" ref="index">
@@ -65,53 +65,47 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
     </file>
-    <file name="pic-labels-dark.jpg" crc="407203628" ref="index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="pic-agencies.jpg" crc="3944597655" ref="index">
-      <caption webpage="index" alt=""/>
-    </file>
     <file name="kkculture-b.png" crc="4016884036" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="kkculture-b_2x.png" crc="469440715" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="vi-s-b.png" crc="3920890151" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="vi-s-b_2x.png" crc="3796890009" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="grid-b.png" crc="4180942089" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="grid-b_2x.png" crc="3806204113" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="kkculture-w.png" crc="4074756543" seo="true" ref="index">
       <caption webpage="index" alt=""/>
@@ -184,8 +178,41 @@
       <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="you-create-favicon.ico" crc="3885619609" ref="you-create"/>
+    <file name="marquee-bios-a.jpg" crc="31738601" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="marquee-bios-a_2x.jpg" crc="305922018" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="marquee-bios-b.jpg" crc="4222965054" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="marquee-bios-b_2x.jpg" crc="349558722" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="marquee-bios-d.jpg" crc="4193967698" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="marquee-bios-d_2x.jpg" crc="3843100818" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="marquee-bios-c.jpg" crc="4231701017" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="marquee-bios-c_2x.jpg" crc="412062036" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="marquee-bios-e.jpg" crc="3855742136" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="marquee-bios-e_2x.jpg" crc="4207713426" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pic-lebals_2x.jpg" crc="3191068" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
   </folder>
-  <file name="index.html" crc="4047760319" seo="true" mt="1673235823969" redirect="true"/>
+  <file name="index.html" crc="376064715" seo="true" mt="1673369766730" redirect="true"/>
   <file name="visual-identity.html" crc="4116591826" seo="true" mt="1673220353922" redirect="true"/>
   <file name="you-create.html" crc="209915690" seo="true" mt="1673220361726" redirect="true"/>
 </manifest>
