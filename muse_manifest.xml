@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673369776278">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673370138606">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4271753388" ref="index"/>
+    <file name="index.css" crc="4085795971" ref="index"/>
     <file name="visual-identity.css" crc="4092726866" ref="visual-identity"/>
     <file name="you-create.css" crc="443158441" ref="you-create"/>
   </folder>
@@ -212,7 +212,7 @@
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="376064715" seo="true" mt="1673369766730" redirect="true"/>
+  <file name="index.html" crc="109359492" seo="true" mt="1673370115074" redirect="true"/>
   <file name="visual-identity.html" crc="4116591826" seo="true" mt="1673220353922" redirect="true"/>
   <file name="you-create.html" crc="209915690" seo="true" mt="1673220361726" redirect="true"/>
 </manifest>
