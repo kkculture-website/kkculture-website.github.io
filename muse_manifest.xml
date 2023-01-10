@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673371656239">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673372580094">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4193923848" ref="index"/>
+    <file name="index.css" crc="513035363" ref="index"/>
     <file name="visual-identity.css" crc="4092726866" ref="visual-identity"/>
     <file name="you-create.css" crc="443158441" ref="you-create"/>
   </folder>
@@ -13,7 +13,6 @@
     <file name="jquery.watch.js" crc="522499760" ref="index:visual-identity:you-create"/>
     <file name="jquery.scrolleffects.js" crc="312044820" ref="index"/>
     <file name="require.js" crc="4177726516" ref="index:visual-identity:you-create"/>
-    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="index"/>
   </folder>
   <folder name="images">
     <file name="kkculture-favicon.ico" crc="3885619609" ref="index"/>
@@ -40,7 +39,7 @@
     <file name="pic-lebals.jpg" crc="485933075" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="pic-kklive.jpg" crc="199617539" ref="index">
+    <file name="pic-kklive.jpg" crc="144125233" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="go w.png" crc="3882610208" seo="true" ref="index">
@@ -178,41 +177,44 @@
       <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="you-create-favicon.ico" crc="3885619609" ref="you-create"/>
-    <file name="marquee-bios-a.jpg" crc="31738601" ref="index">
+    <file name="marquee-bios-a.jpg" crc="258299553" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="marquee-bios-a_2x.jpg" crc="305922018" ref="index">
+    <file name="marquee-bios-a_2x.jpg" crc="4134842290" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="marquee-bios-b.jpg" crc="4222965054" ref="index">
+    <file name="marquee-bios-b.jpg" crc="3793944931" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="marquee-bios-b_2x.jpg" crc="349558722" ref="index">
+    <file name="marquee-bios-b_2x.jpg" crc="362824001" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="marquee-bios-d.jpg" crc="4193967698" ref="index">
+    <file name="marquee-bios-d.jpg" crc="100793440" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="marquee-bios-d_2x.jpg" crc="3843100818" ref="index">
+    <file name="marquee-bios-d_2x.jpg" crc="4292919652" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="marquee-bios-c.jpg" crc="4231701017" ref="index">
+    <file name="marquee-bios-c.jpg" crc="4005951142" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="marquee-bios-c_2x.jpg" crc="412062036" ref="index">
+    <file name="marquee-bios-c_2x.jpg" crc="170163748" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="marquee-bios-e.jpg" crc="3855742136" ref="index">
+    <file name="marquee-bios-e.jpg" crc="4150185806" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="marquee-bios-e_2x.jpg" crc="4207713426" ref="index">
+    <file name="marquee-bios-e_2x.jpg" crc="210453877" ref="index">
       <caption webpage="index" alt=""/>
     </file>
     <file name="pic-lebals_2x.jpg" crc="3191068" ref="index">
       <caption webpage="index" alt=""/>
     </file>
+    <file name="pic-kklive_2x.jpg" crc="32546364" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
   </folder>
-  <file name="index.html" crc="64582535" seo="true" mt="1673371647296" redirect="true"/>
+  <file name="index.html" crc="3924008994" seo="true" mt="1673372575174" redirect="true"/>
   <file name="visual-identity.html" crc="4116591826" seo="true" mt="1673220353922" redirect="true"/>
   <file name="you-create.html" crc="209915690" seo="true" mt="1673220361726" redirect="true"/>
 </manifest>
