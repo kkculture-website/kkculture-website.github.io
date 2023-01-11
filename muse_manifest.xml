@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673430611137">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673431032443">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="317528514" ref="index"/>
+    <file name="index.css" crc="3967542453" ref="index"/>
     <file name="visual-identity.css" crc="4092726866" ref="visual-identity"/>
     <file name="you-create.css" crc="443158441" ref="you-create"/>
   </folder>
@@ -190,14 +190,14 @@
     <file name="bg-pic-live_2x.jpg" crc="238070623" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="bg-pic-ventures.jpg" crc="284031736" ref="index">
+    <file name="bg-pic-ventures.jpg" crc="3810436817" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="bg-pic-ventures_2x.jpg" crc="109660572" ref="index">
+    <file name="bg-pic-ventures_2x.jpg" crc="111445687" ref="index">
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="401062837" seo="true" mt="1673430486618" redirect="true"/>
+  <file name="index.html" crc="4159962600" seo="true" mt="1673431011634" redirect="true"/>
   <file name="visual-identity.html" crc="3998672251" seo="true" mt="1673376919317" redirect="true"/>
   <file name="you-create.html" crc="4265437494" seo="true" mt="1673376919320" redirect="true"/>
 </manifest>
