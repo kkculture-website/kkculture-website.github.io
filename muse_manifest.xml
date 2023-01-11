@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673406495758">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1673407229859">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="4216410323" ref="index"/>
+    <file name="index.css" crc="125784471" ref="index"/>
     <file name="visual-identity.css" crc="4092726866" ref="visual-identity"/>
     <file name="you-create.css" crc="443158441" ref="you-create"/>
   </folder>
@@ -13,6 +13,7 @@
     <file name="jquery.watch.js" crc="522499760" ref="index:visual-identity:you-create"/>
     <file name="jquery.scrolleffects.js" crc="312044820" ref="index"/>
     <file name="require.js" crc="4177726516" ref="index:visual-identity:you-create"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="index"/>
   </folder>
   <folder name="images">
     <file name="kkculture-favicon.ico" crc="3885619609" ref="index"/>
@@ -68,43 +69,43 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="kkculture-b_2x.png" crc="469440715" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="vi-s-b.png" crc="3920890151" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="vi-s-b_2x.png" crc="3796890009" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="grid-b.png" crc="4180942089" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="grid-b_2x.png" crc="3806204113" seo="true" ref="index:visual-identity:you-create">
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="visual-identity" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="visual-identity" alt=""/>
     </file>
     <file name="kkculture-w.png" crc="4074756543" seo="true" ref="index">
       <caption webpage="index" alt=""/>
@@ -214,7 +215,7 @@
       <caption webpage="index" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="442924659" seo="true" mt="1673406442212" redirect="true"/>
+  <file name="index.html" crc="430671299" seo="true" mt="1673407205837" redirect="true"/>
   <file name="visual-identity.html" crc="3998672251" seo="true" mt="1673376919317" redirect="true"/>
   <file name="you-create.html" crc="4265437494" seo="true" mt="1673376919320" redirect="true"/>
 </manifest>
