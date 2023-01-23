@@ -1,10 +1,10 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1674427758097">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1674432915600">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="about.css" crc="172979523" ref="about"/>
     <file name="you-create.css" crc="443158441" ref="you-create"/>
-    <file name="index.css" crc="12679246" ref="index"/>
-    <file name="nomq_index.css" crc="517366664" ref="index"/>
+    <file name="index.css" crc="364351292" ref="index"/>
+    <file name="nomq_index.css" crc="435458785" ref="index"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:about:you-create"/>
@@ -21,12 +21,8 @@
     <file name="kkculture-favicon.ico" crc="3885619609" ref="index"/>
     <file name="mv-1.jpg" crc="54024007" seo="true" ref="index">
       <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
     </file>
     <file name="white-dot-mask.png" crc="144146276" seo="true" ref="index">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
@@ -35,16 +31,11 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
     </file>
     <file name="mv-2.jpg" crc="53761973" seo="true" ref="index">
       <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
     </file>
     <file name="mv-3.jpg" crc="4217344231" seo="true" ref="index">
-      <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
     </file>
     <file name="marquee-c-pic.jpg" crc="4276172548" ref="index">
@@ -273,8 +264,27 @@
       <caption webpage="about" alt=""/>
     </file>
     <file name="you-create-favicon.ico" crc="3885619609" ref="you-create"/>
+    <file name="mv-1318x318.jpg" crc="281643900" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="white-dot-mask320x320.png" crc="4046749166" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="white-dot-mask320x320_2x.png" crc="4045334961" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="mv-2318x318.jpg" crc="4101684098" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="mv-3318x318.jpg" crc="528905775" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
   </folder>
-  <file name="index.html" crc="136982617" seo="true" mt="1674427363306" redirect="true"/>
+  <file name="index.html" crc="345957627" seo="true" mt="1674432882536" redirect="true"/>
   <file name="about.html" crc="440961941" seo="true" mt="1674091625668" redirect="true"/>
   <file name="you-create.html" crc="4032925963" seo="true" mt="1674090407317" redirect="true"/>
 </manifest>
