@@ -1,9 +1,9 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1674844701750">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1674845232874">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="you-create.css" crc="443158441" ref="you-create"/>
-    <file name="index.css" crc="3891832432" ref="index"/>
-    <file name="nomq_index.css" crc="366630555" ref="index"/>
+    <file name="index.css" crc="179117543" ref="index"/>
+    <file name="nomq_index.css" crc="237779073" ref="index"/>
     <file name="about.css" crc="172979523" ref="about"/>
   </folder>
   <folder name="scripts">
@@ -290,7 +290,7 @@
     </file>
     <file name="you-create-favicon.ico" crc="3885619609" ref="you-create"/>
   </folder>
-  <file name="index.html" crc="4105494102" seo="true" mt="1674452241068" redirect="true"/>
+  <file name="index.html" crc="72243598" seo="true" mt="1674845169717" redirect="true"/>
   <file name="about.html" crc="3857827776" seo="true" mt="1674091625668" redirect="true"/>
   <file name="you-create.html" crc="4167044136" seo="true" mt="1674090407317" redirect="true"/>
 </manifest>
