@@ -1,12 +1,12 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1674870330407">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1674872326141">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="you-create.css" crc="13078226" ref="you-create"/>
-    <file name="about.css" crc="241805583" ref="about"/>
+    <file name="about.css" crc="3759832135" ref="about"/>
     <file name="index.css" crc="216833342" ref="index"/>
     <file name="nomq_index.css" crc="253102453" ref="index"/>
     <file name="nomq_you-create.css" crc="4201128504" ref="you-create"/>
-    <file name="nomq_about.css" crc="157640395" ref="about"/>
+    <file name="nomq_about.css" crc="4242768814" ref="about"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:about:you-create"/>
@@ -334,6 +334,6 @@
     </file>
   </folder>
   <file name="index.html" crc="4268343109" seo="true" mt="1674867572461" redirect="true"/>
-  <file name="about.html" crc="3853910225" seo="true" mt="1674870245680" redirect="true"/>
+  <file name="about.html" crc="188737874" seo="true" mt="1674872268833" redirect="true"/>
   <file name="you-create.html" crc="389230149" seo="true" mt="1674870270756" redirect="true"/>
 </manifest>
