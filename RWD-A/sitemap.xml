@@ -119,6 +119,12 @@
     <image:image>
       <image:loc>http://www.kkculture.com/images/vi-l320x180.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>http://www.kkculture.com/images/vi-l-m.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://www.kkculture.com/images/vi-l-m_2x.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://www.kkculture.com/you-create.html</loc>
