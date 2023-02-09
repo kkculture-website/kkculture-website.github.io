@@ -10,7 +10,6 @@
   <style>
     html,
     body {
-      height: 100%;
       margin: 0;
     }
 
@@ -18,30 +17,32 @@
       font-family: Elza;
     }
 
-    table,
-    td {
+    .table,
+    .td {
       border: 0.5px solid black;
       border-collapse: collapse;
     }
 
-    table {
+    .table {
       width: 100%;
       display: grid;
       grid-template-rows: repeat(10, 1fr);
+      box-sizing: border-box;
+      padding: 0.5px;
     }
 
-    tr {
+    .tr {
       display: grid;
       grid-template-columns: repeat(10, 1fr);
     }
 
     .you-create__palette-color:after,
-    td:after {
+    .td:after {
       content: '';
       display: block;
       margin-top: 100%;
     }
-    
+
     .you-create__close {
       cursor: pointer;
       position: fixed;
@@ -75,6 +76,7 @@
       margin-top: 25px;
       font-size: 16px;
       font-weight: 300;
+      line-height: 25px;
     }
 
     .you-create__canvas {
@@ -156,6 +158,7 @@
       margin-bottom: 45px;
       font-size: 16px;
       text-align: center;
+      line-height: 25px;
     }
 
     .you-create__popup-close {
@@ -195,6 +198,11 @@
       .you-create__input input {
         font-size: 14px;
       }
+
+      .you-create__description,
+      .you-create__popup-description {
+        line-height: 20px;
+      }
     }
 
     @media (max-width: 768px) {
@@ -223,6 +231,11 @@
       .you-create__input input {
         font-size: 12px;
       }
+
+      .you-create__description,
+      .you-create__popup-description {
+        line-height: 20px;
+      }
     }
 
     @media (max-width: 575px) {
@@ -240,6 +253,11 @@
       .you-create__description,
       .you-create__input input {
         font-size: 16px;
+      }
+
+      .you-create__description,
+      .you-create__popup-description {
+        line-height: 25px;
       }
 
       .you-create__intro {
@@ -297,7 +315,7 @@
             Please create your own pixel art in the 10-by-10 grid by filling up colors.
             <br />
             <br />
-            Next time when you visit our office you'll see it as a painting on the wall.
+            Next time when you visit our office you might see your painting on our walls.
           </div>
         </div>
         `;
@@ -309,7 +327,7 @@
       }
       render({ color }, { backgroundColor = '' }) {
         return html`
-          <td style=${{ backgroundColor }} onClick=${() => this.onClicked(color)}></td>
+          <div className="td" style=${{ backgroundColor }} onClick=${() => this.onClicked(color)}></div>
         `;
       }
     }
@@ -320,9 +338,9 @@
         data.push(html`<${TableData} color=${color} />`);
       }
       return html`
-        <tr>
+        <div className="tr">
           ${data}
-        </tr>
+        </div>
       `
     }
 
@@ -337,11 +355,13 @@
           rows.push(html`<${TableRow} color=${color}/>`);
         }
         return html`
-          <div className="you-create__canvas" >
-            <table id="art">
-              ${rows}
-            </table>
-            <div className="you-create__palette">
+          <div className="you-create__canvas">
+            <div id="art">
+              <div className="table">
+                ${rows}
+              </div>
+            </div>
+            <div className="you-create__palette" id="palette">
               ${colors.map((c) => html`<div 
                 className="you-create__palette-color"
                 key=${c} 
@@ -369,23 +389,41 @@
         if (isLock) return;
         this.setState({ isLock: true });
         if (!titleArt || !name || !email || (!!email && !validateEmail(email))) return;
-        domtoimage.toSvg(document.getElementById("art")).then((dataUrl) => {
+        domtoimage.toSvg(document.getElementById("art"), {
+          filter: (n) => {
+            if (n.className === 'td') {
+              n.style.border = '0px';
+            }
+            return true;
+          }
+        }).then((dataUrl) => {
           var decoded = unescape(encodeURIComponent(dataUrl.split(';charset=utf-8,')[1]));
           var base64 = btoa(decoded);
           Email.send({
-            SecureToken: "d9cd4e29-6ae3-4b09-af07-c1c0b21ae8e5",
+            SecureToken: "5409bae6-8d90-4d18-ac46-a82e3a1c25ad",
             To: [email, "service.official-website@kkculture.com"],
-            From: "service.elasticemail@kkculture.com",
+            From: "KKCulture<no-reply@kkculture.com>",
             Subject: "Your pixel art was created.",
-            Body: `Hi ${name}, thank you for creating a beautiful pixel art. Next time when you visit our office you’ll see it as a painting on the wall. <br/><br/> KKCulture`,
+            Body: `<div>
+              <p>Hi ${name},</p>
+              <p>Thank you for creating a beautiful pixel art. Next time when you visit our office you might see your painting on our wall.</p>
+              <br/>
+              <span>KKCulture<span>
+                </div>`,
             Attachments: [
               {
                 name: `${titleArt}.svg`,
                 data: base64
               }]
           })
-            .then(_ => this.setState({ showPopup: true }))
-            .catch(_ => this.setState({ error: true, isLock: false }));
+            .then(res => {
+              console.log(res)
+              if (res === 'OK') {
+                this.setState({ showPopup: true });
+              } else {
+                this.setState({ error: true, isLock: false });
+              }
+            });
         });
       }
       render({ }, { titleArt, name, email, error = false, showPopup = false, isLock = false }) {
@@ -401,27 +439,27 @@
         <div className="you-create__form">
           <div className="you-create__input">
             <input 
-              placeHolder="Title of Art" 
-              maxlength="60" value=${titleArt} 
-              onInput=${(e) => this.setState({ titleArt: e.target.value.replace(/\p{Emoji}/u, '') })} 
+              placeHolder="Title of Art"
+              maxlength="60" value=${titleArt}
+              onInput=${(e) => this.setState({ titleArt: e.target.value.replace(/[\p{Extended_Pictographic}\u{1F3FB}-\u{1F3FF}\u{1F9B0}-\u{1F9B3}]/u, '') })} 
             />
           </div>
           <div className="you-create__input">
             <input 
-              placeHolder="Your Name" 
-              maxlength="60" 
-              value=${name} 
-              onInput=${(e) => this.setState({ name: e.target.value.replace(/\p{Emoji}/u, '') })} 
+              placeHolder="Your Name"
+              maxlength="60"
+              value=${name}
+              onInput=${(e) => this.setState({ name: e.target.value.replace(/[\p{Extended_Pictographic}\u{1F3FB}-\u{1F3FF}\u{1F9B0}-\u{1F9B3}]/u, '') })} 
             />
           </div>
           <div className="you-create__input">
             <input 
-              placeHolder="Your Email" 
+              placeHolder="Your Email"
               maxlength="60"
               style=${{
             color: !!email && !validateEmail(email) ? '#FF0000' : '#000000'
           }}
-              value=${email} 
+              value=${email}
               onInput=${(e) => this.setState({ email: e.target.value })} 
             />
           </div>
