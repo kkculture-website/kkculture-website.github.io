@@ -18,7 +18,7 @@
     }
 
     #art {
-      padding: 0.5px;
+      padding: 1px;
     }
 
     .table,
@@ -328,7 +328,7 @@
       onClicked(color) {
         this.setState({ backgroundColor: color });
       }
-      render({ color }, { backgroundColor = '' }) {
+      render({ color }, { backgroundColor = '#FFFFFF' }) {
         return html`
           <div className="td" style=${{ backgroundColor }} onClick=${() => this.onClicked(color)}></div>
         `;
