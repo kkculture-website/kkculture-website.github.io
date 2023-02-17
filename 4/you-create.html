@@ -1,0 +1,501 @@
+<html>
+
+<head>
+  <title>You Create.</title>
+  <link rel="shortcut icon" href="https://kkculture.com/images/kkculture-favicon.ico?crc=3885619609">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.typekit.net/pxg5oql.css">
+  <script src="https://unpkg.com/dom-to-image-more"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <style>
+    html,
+    body {
+      margin: 0;
+    }
+
+    html {
+      font-family: Elza;
+    }
+
+    #art {
+      padding: 1px;
+    }
+
+    .table,
+    .td {
+      border: 0.5px solid black;
+      border-collapse: collapse;
+    }
+
+    .table {
+      width: 100%;
+      display: grid;
+      grid-template-rows: repeat(10, 1fr);
+      box-sizing: border-box;
+    }
+
+    .tr {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+    }
+
+    .you-create__palette-color:after,
+    .td:after {
+      content: '';
+      display: block;
+      margin-top: 100%;
+    }
+
+    .you-create__close {
+      cursor: pointer;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 35px;
+    }
+
+    .component-wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      gap: 125px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .you-create__form,
+    .you-create__intro {
+      min-width: 170px;
+      max-width: 170px;
+    }
+
+    .you-create__popup-title,
+    .you-create__title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .you-create__description {
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+
+    .you-create__canvas {
+      align-self: center;
+      flex-grow: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      max-width: 480px;
+    }
+
+    .you-create__palette {
+      gap: 18px;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      width: 100%;
+      align-self: center;
+      padding: 0 10%;
+      box-sizing: border-box;
+    }
+
+    .you-create__palette-color {
+      border-radius: 25px;
+      border: 2px solid white;
+      box-sizing: border-box;
+    }
+
+    .you-create__form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .you-create__input input {
+      border-radius: 0;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid;
+      height: 35px;
+      width: 100%;
+      font-family: 'elza';
+      font-size: 16px;
+    }
+
+    input:focus::placeholder {
+      color: transparent;
+    }
+
+    .you-create__button {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 35px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .you-create__popup {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .you-create__popup-wrapper {
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .you-create__popup-description {
+      margin-top: 40px;
+      margin-bottom: 45px;
+      font-size: 16px;
+      text-align: center;
+      line-height: 25px;
+    }
+
+    .you-create__popup-close {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+    }
+
+    @media (max-width: 1170px) {
+      body {
+        padding: 0 50px;
+      }
+
+      .you-create__popup-wrapper {
+        width: 160px;
+      }
+
+      .component-wrapper {
+        gap: 10px;
+        justify-content: space-between;
+      }
+
+      .you-create__popup-title,
+      .you-create__title {
+        font-size: 18px;
+      }
+
+      .you-create__form,
+      .you-create__intro {
+        min-width: 150px;
+        max-width: 150px;
+      }
+
+      .you-create__popup-description,
+      .you-create__button,
+      .you-create__description,
+      .you-create__input input {
+        font-size: 14px;
+      }
+
+      .you-create__description,
+      .you-create__popup-description {
+        line-height: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 0 20px;
+      }
+
+      .you-create__popup-wrapper {
+        width: 140px;
+      }
+
+      .you-create__form,
+      .you-create__intro {
+        min-width: 130px;
+        max-width: 130px;
+      }
+
+      .you-create__popup-title,
+      .you-create__title {
+        font-size: 16px;
+      }
+
+      .you-create__popup-description,
+      .you-create__button,
+      .you-create__description,
+      .you-create__input input {
+        font-size: 12px;
+      }
+
+      .you-create__description,
+      .you-create__popup-description {
+        line-height: 20px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .you-create__popup-wrapper {
+        width: 180px;
+      }
+
+      .you-create__popup-title,
+      .you-create__title {
+        font-size: 20px;
+      }
+
+      .you-create__popup-description,
+      .you-create__button,
+      .you-create__description,
+      .you-create__input input {
+        font-size: 16px;
+      }
+
+      .you-create__description,
+      .you-create__popup-description {
+        line-height: 25px;
+      }
+
+      .you-create__intro {
+        margin-top: 55px;
+        min-width: 170px;
+        max-width: 170px;
+      }
+
+      .component-wrapper {
+        height: initial;
+        gap: 35px;
+        flex-direction: column;
+        align-items: initial;
+      }
+
+      .you-create__palette {
+        margin-top: 20px;
+      }
+
+      .you-create__form {
+        min-width: initial;
+        max-width: initial;
+        margin-bottom: 55px;
+      }
+    }
+  </style>
+  <script type="module">
+    import { h, Component, render } from 'https://unpkg.com/preact?module';
+    import htm from 'https://unpkg.com/htm?module';
+
+    const html = htm.bind(h);
+
+
+    function CloseSVG() {
+      return html`<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 79.2 79.2" style="enable-background:new 0 0 79.2 79.2;" xml:space="preserve">
+        <g>
+          <g>
+            <rect x="15.47" y="38.39" transform="matrix(0.7073 -0.7069 0.7069 0.7073 -16.4029 39.5867)" width="48.26" height="2.42" />
+          </g>
+          <g>
+            <rect x="38.39" y="15.47" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -16.4029 39.6003)" width="2.42" height="48.26" />
+          </g>
+          <g>
+            <path d="M39.6,79.2C17.76,79.2,0,61.44,0,39.6S17.76,0,39.6,0s39.6,17.76,39.6,39.6S61.44,79.2,39.6,79.2z M39.6,2.42    C19.1,2.42,2.42,19.1,2.42,39.6S19.1,76.78,39.6,76.78S76.78,60.1,76.78,39.6S60.1,2.42,39.6,2.42z" />
+          </g>
+        </g>
+      </svg>`
+    }
+
+    function TextAreaComponent() {
+      return html`
+        <div className="you-create__intro">
+          <div className="you-create__title">You Create.</div>
+          <div className="you-create__description">
+            Please create your own pixel art in the 10-by-10 grid by filling up colors.
+            <br />
+            <br />
+            Next time when you visit our office you might see your painting on our walls.
+          </div>
+        </div>
+        `;
+    }
+
+    class TableData extends Component {
+      onClicked(color) {
+        this.setState({ backgroundColor: color });
+      }
+      render({ color }, { backgroundColor = '#FFFFFF' }) {
+        return html`
+          <div className="td" style=${{ backgroundColor }} onClick=${() => this.onClicked(color)}></div>
+        `;
+      }
+    }
+
+    function TableRow({ color }) {
+      const data = [];
+      for (let i = 0; i < 10; i++) {
+        data.push(html`<${TableData} color=${color} />`);
+      }
+      return html`
+        <div className="tr">
+          ${data}
+        </div>
+      `
+    }
+
+    class CanvasComponent extends Component {
+      setColor(color) {
+        this.setState({ color: color });
+      }
+      render({ }, { color = '#000000' }) {
+        const rows = [];
+        const colors = ['#B40f42', '#FF8300', '#64C025', '#205E69', '#FFFFFF', '#000000']
+        for (let i = 0; i < 10; i++) {
+          rows.push(html`<${TableRow} color=${color}/>`);
+        }
+        return html`
+          <div className="you-create__canvas">
+            <div id="art">
+              <div className="table">
+                ${rows}
+              </div>
+            </div>
+            <div className="you-create__palette" id="palette">
+              ${colors.map((c) => html`<div 
+                className="you-create__palette-color"
+                key=${c} 
+                style=${{
+            backgroundColor: c,
+            border: c === '#FFFFFF' ? '2px solid #B4B4B4' : '',
+            boxShadow: color === c ? '0 0 0 3px black' : ''
+          }} 
+                onClick=${() => this.setColor(c)} />`)}
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    const validateEmail = (email) => {
+      return email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+    };
+
+    class FormComponent extends Component {
+      onClicked = () => {
+        const { titleArt, name, email, isLock } = this.state;
+        if (isLock) return;
+        this.setState({ isLock: true });
+        if (!titleArt || !name || !email || (!!email && !validateEmail(email))) return;
+        domtoimage.toSvg(document.getElementById("art"), {
+          filter: (n) => {
+            if (n.className === 'td') {
+              n.style.border = '0px';
+            }
+            return true;
+          }
+        }).then((dataUrl) => {
+          var decoded = unescape(encodeURIComponent(dataUrl.split(';charset=utf-8,')[1]));
+          var base64 = btoa(decoded);
+          Email.send({
+            SecureToken: "5409bae6-8d90-4d18-ac46-a82e3a1c25ad",
+            To: [email, "service.official-website@kkculture.com"],
+            From: "KKCulture<no-reply@kkculture.com>",
+            Subject: "Your pixel art was created.",
+            Body: `<div>
+              <p>Hi ${name},</p>
+              <p>Thank you for creating a beautiful pixel art. Next time when you visit our office you might see your painting on our wall.</p>
+              <br/>
+              <span>KKCulture<span>
+                </div>`,
+            Attachments: [
+              {
+                name: `${titleArt}.svg`,
+                data: base64
+              }]
+          })
+            .then(res => {
+              console.log(res)
+              if (res === 'OK') {
+                this.setState({ showPopup: true });
+              } else {
+                this.setState({ error: true, isLock: false });
+              }
+            });
+        });
+      }
+      render({ }, { titleArt, name, email, error = false, showPopup = false, isLock = false }) {
+        return html`
+        ${showPopup ?
+            html`<div className="you-create__popup">
+                  <div className="you-create__popup-wrapper">
+                    <div className="you-create__popup-title">Thank You</div>
+                    <div className="you-create__popup-description">Next time when you visit our office, you might see your painting on our walls.</div>
+                    <div className="you-create__popup-close" onClick=${() => window.location = 'https://www.kkculture.com/'}><${CloseSVG} /></div>
+                  </div>
+                </div>` : null}
+        <div className="you-create__form">
+          <div className="you-create__input">
+            <input 
+              placeHolder="Title of Art"
+              maxlength="60" value=${titleArt}
+              onInput=${(e) => this.setState({ titleArt: e.target.value.replace(/[\p{Extended_Pictographic}\u{1F3FB}-\u{1F3FF}\u{1F9B0}-\u{1F9B3}]/u, '') })} 
+            />
+          </div>
+          <div className="you-create__input">
+            <input 
+              placeHolder="Your Name"
+              maxlength="60"
+              value=${name}
+              onInput=${(e) => this.setState({ name: e.target.value.replace(/[\p{Extended_Pictographic}\u{1F3FB}-\u{1F3FF}\u{1F9B0}-\u{1F9B3}]/u, '') })} 
+            />
+          </div>
+          <div className="you-create__input">
+            <input 
+              placeHolder="Your Email"
+              maxlength="60"
+              style=${{
+            color: !!email && !validateEmail(email) ? '#FF0000' : '#000000'
+          }}
+              value=${email}
+              onInput=${(e) => this.setState({ email: e.target.value })} 
+            />
+          </div>
+          <div className="you-create__button" style=${{
+            color: !titleArt || !name || !email || (!!email && !validateEmail(email)) ? '#808080' : '#000000'
+          }}  onClick=${() => this.onClicked()}>
+            <div>${error ? 'Please Try Again' : 'Submit Your Art'}</div>
+            <div>➔</div>
+          </div>
+        </div>
+        `;
+      }
+    }
+
+    function App(props) {
+      return html`
+          <div className="component-wrapper">
+            <div 
+              className="you-create__close" 
+              onClick=${() => window.location = 'https://www.kkculture.com/'}>
+                <${CloseSVG} />
+            </div>
+            <${TextAreaComponent} />
+            <${CanvasComponent} />
+            <${FormComponent} />
+          </div>
+        `;
+    }
+
+    render(html`<${App} />`, document.body);
+  </script>
+</head>
+
+<body></body>
+
+</html>
