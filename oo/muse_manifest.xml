@@ -1,7 +1,7 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1678281902578">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1678282309008">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="490439358" ref="index"/>
+    <file name="index.css" crc="4228869822" ref="index"/>
     <file name="nomq_index.css" crc="294689452" ref="index"/>
   </folder>
   <folder name="scripts">
@@ -55,5 +55,5 @@
     </file>
     <file name="blank.gif" crc="4208392903" ref="index"/>
   </folder>
-  <file name="index.html" crc="519057337" seo="true" mt="1678281867410" redirect="true"/>
+  <file name="index.html" crc="4126883677" seo="true" mt="1678282280793" redirect="true"/>
 </manifest>
