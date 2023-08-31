@@ -64,7 +64,7 @@
 }
 #career {
   font-weight: 700;
-  right: 28px;
+  right: 31px;
   z-index: 56;
   position: fixed;
   min-height: 10px;
@@ -78,7 +78,7 @@
 #news {
   display: none; /* TODO: Remove before adding News */
   font-weight: 700;
-  right: 28px;
+  right: 31px;
   z-index: 56;
   position: fixed;
   min-height: 10px;
