@@ -82,6 +82,34 @@
   top: 19px;
   background-color: transparent;
 }
+#career {
+  font-weight: 700;
+  right: 28px;
+  z-index: 56;
+  position: fixed;
+  min-height: 10px;
+  font-size: 15px;
+  font-family: elza, sans-serif;
+  line-height: 18px;
+  text-align: right;
+  background-color: transparent;
+  top: 55px;
+}
+#news {
+  display: none; /* TODO: Remove before adding News */
+  font-weight: 700;
+  right: 28px;
+  z-index: 56;
+  position: fixed;
+  min-height: 10px;
+  font-size: 15px;
+  font-family: elza, sans-serif;
+  line-height: 18px;
+  text-align: right;
+  background-color: transparent;
+  width: 200px;
+  top: 78px;
+}
 #u12879-4 {
   font-weight: 700;
   z-index: 11;

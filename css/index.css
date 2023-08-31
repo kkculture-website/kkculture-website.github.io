@@ -1574,6 +1574,51 @@
   top: 19px;
   background-color: transparent;
 }
+#career-0,
+#career-1,
+#career-2,
+#career-3,
+#career-4
+{
+  font-weight: 700;
+  right: 28px;
+  z-index: 56;
+  position: fixed;
+  min-height: 10px;
+  font-size: 15px;
+  font-family: elza, sans-serif;
+  line-height: 18px;
+  text-align: right;
+  background-color: transparent;
+  top: 55px;
+}
+#news-0,
+#news-1,
+#news-2,
+#news-3,
+#news-4
+{
+  display: none; /* TODO: Remove before adding News */
+  font-weight: 700;
+  right: 28px;
+  z-index: 56;
+  position: fixed;
+  min-height: 10px;
+  font-size: 15px;
+  font-family: elza, sans-serif;
+  line-height: 18px;
+  text-align: right;
+  background-color: transparent;
+  width: 200px;
+  top: 78px;
+}
+#career-1,
+#career-3,
+#news-1,
+#news-3
+{
+  color: #ffffff;
+}
 #u3540 {
   z-index: 58;
   position: fixed;
@@ -1673,6 +1718,10 @@
   width: 77px;
   top: 19px;
   background-color: transparent;
+}
+#career-1,
+#news-1 {
+  z-index: 97;
 }
 #u9634 {
   left: 28px;
@@ -1777,6 +1826,10 @@
   top: 19px;
   background-color: transparent;
 }
+#career-2,
+#news-2 {
+  z-index: 128;
+}
 #u10867-4 {
   font-weight: 700;
   color: #ffffff;
@@ -1878,6 +1931,10 @@
   top: 19px;
   background-color: transparent;
 }
+#career-3,
+#news-3 {
+  z-index: 159;
+}
 #u11424-4 {
   font-weight: 700;
   z-index: 168;
@@ -1976,6 +2033,10 @@
   top: 19px;
   background-color: transparent;
 }
+#career-4,
+#news-4 {
+  z-index: 196;
+}
 .js #u3057-4.ose_pre_init,
 .js #u3263-4.ose_pre_init,
 .js #u3377-4.ose_pre_init,
@@ -1999,6 +2060,8 @@
 .js #u9636-4.ose_pre_init,
 .js #u9641.ose_pre_init,
 .js #u9638.ose_pre_init,
+.js #career-1.ose_pre_init,
+.js #news-1.ose_pre_init,
 .js #u9634.ose_pre_init,
 .js #u10332-4.ose_pre_init,
 .js #u10337-4.ose_pre_init,
@@ -2009,6 +2072,8 @@
 .js #u10345.ose_pre_init,
 .js #u10338.ose_pre_init,
 .js #u10342.ose_pre_init,
+.js #career-2.ose_pre_init,
+.js #news-2.ose_pre_init,
 .js #u10867-4.ose_pre_init,
 .js #u10857-4.ose_pre_init,
 .js #u10856-4.ose_pre_init,
@@ -2018,6 +2083,8 @@
 .js #u10862.ose_pre_init,
 .js #u10864.ose_pre_init,
 .js #u10333.ose_pre_init,
+.js #career-3.ose_pre_init,
+.js #news-3.ose_pre_init,
 .js #u11424-4.ose_pre_init,
 .js #u11425-4.ose_pre_init,
 .js #u11420-4.ose_pre_init,
@@ -2026,7 +2093,9 @@
 .js #u11426-4.ose_pre_init,
 .js #u11422.ose_pre_init,
 .js #u11427.ose_pre_init,
-.js #u11429.ose_pre_init {
+.js #u11429.ose_pre_init,
+.js #career-4.ose_pre_init,
+.js #news-4.ose_pre_init {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
