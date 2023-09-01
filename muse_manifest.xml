@@ -1,12 +1,12 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1676688984866">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="www.kkculture.com" resolutions="1x,2x" timestamp="1674873296117">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="you-create.css" crc="4004594615" ref="you-create"/>
+    <file name="you-create.css" crc="13078226" ref="you-create"/>
+    <file name="about.css" crc="4253180862" ref="about"/>
+    <file name="index.css" crc="216833342" ref="index"/>
+    <file name="nomq_index.css" crc="253102453" ref="index"/>
     <file name="nomq_you-create.css" crc="4201128504" ref="you-create"/>
-    <file name="about.css" crc="72004219" ref="about"/>
-    <file name="nomq_about.css" crc="411470849" ref="about"/>
-    <file name="index.css" crc="4129403658" ref="index"/>
-    <file name="nomq_index.css" crc="423870997" ref="index"/>
+    <file name="nomq_about.css" crc="271280593" ref="about"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:about:you-create"/>
@@ -176,10 +176,10 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="about" alt=""/>
-      <caption webpage="about" alt=""/>
       <caption webpage="you-create" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
     </file>
     <file name="kkculture-b_2x.png" crc="469440715" seo="true" ref="index:about:you-create">
       <caption webpage="index" alt=""/>
@@ -188,10 +188,10 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="about" alt=""/>
-      <caption webpage="about" alt=""/>
       <caption webpage="you-create" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
     </file>
     <file name="vi-s-b.png" crc="3920890151" seo="true" ref="index:about:you-create">
       <caption webpage="index" alt=""/>
@@ -200,10 +200,10 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="about" alt=""/>
-      <caption webpage="about" alt=""/>
       <caption webpage="you-create" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
     </file>
     <file name="vi-s-b_2x.png" crc="3796890009" seo="true" ref="index:about:you-create">
       <caption webpage="index" alt=""/>
@@ -212,10 +212,10 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="about" alt=""/>
-      <caption webpage="about" alt=""/>
       <caption webpage="you-create" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
     </file>
     <file name="grid-b.png" crc="4180942089" seo="true" ref="index:about:you-create">
       <caption webpage="index" alt=""/>
@@ -224,10 +224,10 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="about" alt=""/>
-      <caption webpage="about" alt=""/>
       <caption webpage="you-create" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
     </file>
     <file name="grid-b_2x.png" crc="3806204113" seo="true" ref="index:about:you-create">
       <caption webpage="index" alt=""/>
@@ -236,10 +236,10 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
-      <caption webpage="about" alt=""/>
-      <caption webpage="about" alt=""/>
       <caption webpage="you-create" alt=""/>
       <caption webpage="you-create" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
     </file>
     <file name="grid-w.png" crc="4106759290" seo="true" ref="index">
       <caption webpage="index" alt=""/>
@@ -317,6 +317,13 @@
     <file name="marquee-bios-all-b-u17737-fr_2x.png" crc="3878271406" ref="index"/>
     <file name="blank.gif" crc="4208392903" ref="index:about:you-create"/>
     <file name="about-favicon.ico" crc="3885619609" ref="about"/>
+    <file name="vi-l.jpg" crc="137915785" seo="true" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="you-create-favicon.ico" crc="3885619609" ref="you-create"/>
+    <file name="vi-l320x180.jpg" crc="3764494920" seo="true" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
     <file name="vi-l-m.jpg" crc="4118604885" seo="true" ref="about">
       <caption webpage="about" alt=""/>
       <caption webpage="about" alt=""/>
@@ -325,15 +332,8 @@
       <caption webpage="about" alt=""/>
       <caption webpage="about" alt=""/>
     </file>
-    <file name="vi-l.jpg" crc="137915785" seo="true" ref="about">
-      <caption webpage="about" alt=""/>
-    </file>
-    <file name="vi-l320x180.jpg" crc="3764494920" seo="true" ref="about">
-      <caption webpage="about" alt=""/>
-    </file>
-    <file name="you-create-favicon.ico" crc="3885619609" ref="you-create"/>
   </folder>
-  <file name="index.html" crc="165485635" seo="true" mt="1676644405652" redirect="true"/>
-  <file name="about.html" crc="134088576" seo="true" mt="1676687899565" redirect="true"/>
-  <file name="you-create.html" crc="3851433218" seo="true" mt="1676643428113" redirect="true"/>
+  <file name="index.html" crc="4268343109" seo="true" mt="1674867572461" redirect="true"/>
+  <file name="about.html" crc="3788799646" seo="true" mt="1674873287570" redirect="true"/>
+  <file name="you-create.html" crc="389230149" seo="true" mt="1674870270756" redirect="true"/>
 </manifest>
