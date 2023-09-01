@@ -6,7 +6,7 @@ This is the source code of KKCulture website hosted on [GitHub Pages](https://pa
 
 ## File Structure
 
-```
+```sh
 ./
  ├── css/               # CSS styles.
  ├── images/            # Public images and videos.
